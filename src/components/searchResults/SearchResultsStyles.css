@@ -1,0 +1,12 @@
+.search-results-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.search-result-item {
+  flex-grow: 1;
+  min-width: 200px;
+  aspect-ratio: 1;
+  box-shadow: 0 0 0 2px inset orchid;
+}

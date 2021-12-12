@@ -1,0 +1,15 @@
+.search-bar-container {
+  display: flex;
+  padding: 4px;
+  justify-content: center;
+}
+
+.search-box {
+  flex-grow: 1;
+  max-width: 400px;
+  font-size: 16pt;
+}
+
+.search-button {
+  font-size: 16pt;
+}
