@@ -2,8 +2,10 @@ import React from 'react'
 import './App.css'
 import SearchBar from './components/searchBar/SearchBar';
 import SearchResults from './components/searchResults/SearchResults';
+import { useAppSelector } from './globalState/stateHooks';
 
 function App() {
+  const isSearchActive: boolean = useAppSelector(state => state.gifSearch.isSearchActive);
 
   return (
     <div className="app">
@@ -11,7 +13,7 @@ function App() {
         <SearchBar />
       </header>
       <div className="app-content">
-        <SearchResults />
+        {isSearchActive && <SearchResults /> }
       </div>
     </div>
   )
